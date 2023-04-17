@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace SyntaxMedical.web.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<HGatesEmployee>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
