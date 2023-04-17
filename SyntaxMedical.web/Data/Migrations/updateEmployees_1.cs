@@ -2,7 +2,7 @@
 
 namespace SyntaxMedical.web.Data
 {
-    public class HGatesEmployee : IdentityUser
+    public class updateEmployees_1 : IdentityUser
     {
         public string? StaffID { get; set; }
         public string? DateJoined { get; set; }
