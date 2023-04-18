@@ -1,8 +1,9 @@
 ﻿namespace SyntaxMedical.web.Data.Migrations
 {
-    public class Conditions
+    public class Room
     {
         public int Id { get; set; }
-        public string? ConditionName { get; set; }
+        public int RoomNumber { get; set; }
+
     }
 }

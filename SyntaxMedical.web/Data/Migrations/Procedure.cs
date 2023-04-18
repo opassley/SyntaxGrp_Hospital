@@ -1,8 +1,8 @@
 ﻿namespace SyntaxMedical.web.Data.Migrations
 {
-    public class Parishes
+    public class Procedure
     {
         public int Id { get; set; }
-        public string? ParishName { get; set; }
+        public string? ProcedureName { get; set; }
     }
 }

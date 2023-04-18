@@ -1,6 +1,6 @@
 ﻿namespace SyntaxMedical.web.Data.Migrations
 {
-    public class Genders
+    public class Gender
     {
         public int Id { get; set; }
         public string? GenderName { get; set; }
