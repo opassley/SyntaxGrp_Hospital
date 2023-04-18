@@ -1,4 +1,4 @@
-﻿namespace SyntaxMedical.web.Data.Migrations
+﻿namespace SyntaxMedical.web.Data
 {
     public class Specialization
     {
