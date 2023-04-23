@@ -6,23 +6,28 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SyntaxMedical.web.Data;
+using AutoMapper;
+using SyntaxMedical.web.Models;
 
 namespace SyntaxMedical.web.Controllers
 {
     public class ConditionsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IMapper mapper;
 
-        public ConditionsController(ApplicationDbContext context)
+        public ConditionsController(ApplicationDbContext context, IMapper mapper)
         {
             _context = context;
+            this.mapper = mapper;       
         }
 
         // GET: Conditions
         public async Task<IActionResult> Index()
         {
-              return _context.Conditions != null ? 
-                          View(await _context.Conditions.ToListAsync()) :
+            var conditions = mapper.Map <List<ConditionVM>> (await _context.Conditions.ToListAsync());
+            return _context.Conditions != null ? 
+                          View(conditions) :
                           Problem("Entity set 'ApplicationDbContext.Conditions'  is null.");
         }
 

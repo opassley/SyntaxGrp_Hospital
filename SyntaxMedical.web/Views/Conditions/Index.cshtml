@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SyntaxMedical.web.Data.Condition>
+﻿<!-- [at] model IEnumerable<SyntaxMedical.web.Data.Condition> -->
+@model IEnumerable<ConditionVM>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,7 +8,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create A New Condition</a>
 </p>
 <table class="table">
     <thead>
