@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using SyntaxMedical.web.Data
+@inject SignInManager<HGatesEmployee> SignInManager
+@inject UserManager<HGatesEmployee> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+	<li class="nav-item">
+		<a class="nav-link" asp-area="" asp-controller="Conditions" asp-action="Index">
+			Conditions
+		</a>
+	</li>
+	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+	  <span>System Settings</span>
+	</h6>
+}
