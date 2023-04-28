@@ -19,7 +19,7 @@ namespace SyntaxMedical.web.Data
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<EmergencyRelationship> EmergencyRelationships { get; set; }
         public DbSet<Nurse> Nurses { get; set; }
-        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Patient> Patients => Set<Patient>();
         public DbSet<Intake> Intakes { get; set; }
 
     }

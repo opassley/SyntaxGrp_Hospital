@@ -31,8 +31,34 @@ body {
     }
 }
 .admin-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     white-space: nowrap;
     line-height: 60px;
+    background: #0dcaf0d1;
+    width: 100vw;
+    color:aliceblue;
+}
+
+/* SynTAx Group Edited */
+
+img.hero_home {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 80vw;
+    overflow: hidden;
+    margin-right: -20vw;
+}
+
+.welcome h1 {
+    width: 40vw;
+    padding: 2vw;
+    margin: 12vh 2vw 2vw;
+    background: #0dcaf03b;
+    color: white;
+    font-weight: 700;
+}
+div.welcome{
+    overflow:hidden;
 }

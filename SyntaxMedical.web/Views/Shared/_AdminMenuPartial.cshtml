@@ -6,12 +6,49 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-	<li class="nav-item">
-		<a class="nav-link" asp-area="" asp-controller="Conditions" asp-action="Index">
-			Conditions
-		</a>
-	</li>
-	<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-	  <span>System Settings</span>
-	</h6>
+	<ul  class="nav flex-column mb-2">
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Intakes" asp-action="Index">
+				Intakes
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Conditions" asp-action="Index">
+				Conditions
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="EmergencyRelationships" asp-action="Index">
+				Emergency Relationships
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Genders" asp-action="Index">
+				Genders
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Parishes" asp-action="Index">
+				Parishes
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Procedures" asp-action="Index">
+				Procedures
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Rooms" asp-action="Index">
+				Rooms
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="Specializations" asp-action="Index">
+				Specializations
+			</a>
+		</li>	
+	</ul>
+	
+	
+	
 }

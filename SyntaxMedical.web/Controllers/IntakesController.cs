@@ -51,11 +51,11 @@ namespace SyntaxMedical.web.Controllers
         // GET: Intakes/Create
         public IActionResult Create()
         {
-            ViewData["ConditionId"] = new SelectList(_context.Conditions, "Id", "Id");
+            ViewData["ConditionId"] = new SelectList(_context.Conditions, "Id", "Name");
             ViewData["DoctorId"] = new SelectList(_context.Doctors, "Id", "Id");
             ViewData["PatientId"] = new SelectList(_context.Patients, "Id", "Id");
             ViewData["ProcedureId"] = new SelectList(_context.Procedures, "Id", "Id");
-            ViewData["RoomId"] = new SelectList(_context.Rooms, "Id", "Id");
+            ViewData["RoomId"] = new SelectList(_context.Rooms, "Id", "RoomNumber");
             return View();
         }
 
