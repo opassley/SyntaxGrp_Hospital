@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-SyntaxMedical.web-86bb1372-5a92-46f5-a0d7-f23665a6a18d</UserSecretsId>
   </PropertyGroup>

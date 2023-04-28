@@ -119,7 +119,7 @@ namespace SyntaxMedical.web.Controllers
             }
             ViewData["SpecializationId"] = new SelectList(_context.Specializations, "Id", "Id", doctor.SpecializationId);
             return View(doctor);
-        } 
+        }
 
         // GET: Doctors/Delete/5
         public async Task<IActionResult> Delete(int? id)
