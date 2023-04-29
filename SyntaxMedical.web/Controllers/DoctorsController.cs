@@ -57,6 +57,7 @@ namespace SyntaxMedical.web.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("LicensureDate,SpecializationId,Id,FirstName,LastName")] Doctor doctor)
+        
         {
             if (ModelState.IsValid)
             {
@@ -82,6 +83,7 @@ namespace SyntaxMedical.web.Controllers
                 return NotFound();
             }
             ViewData["SpecializationId"] = new SelectList(_context.Specializations, "Id", "Id", doctor.SpecializationId);
+            //ViewData["SpecializationId"] = new SelectList(_context.Specializations, "Id", "Id", doctor.SpecializationId);
             return View(doctor);
         }
 
